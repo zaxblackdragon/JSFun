@@ -1,3 +1,30 @@
+
 .h-pal {
     color: palevioletred;
+}
+
+/* Home link styles */
+.div-home {
+    margin: 0px;
+    width: 60px;
+    display: initial;
+}
+a {
+    text-decoration: none;
+}
+.link-hfour  {
+    color: gray;
+    padding: 5px;
+    margin: 0;
+    display: initial;
+    text-decoration: none;
+}
+.link-hfour:hover {
+    color: white !important;
+    padding: 5px;
+    background: red;
+    cursor: pointer;
+    margin: 0;    
+    display: initial;
+    border-radius: 2px;
 }

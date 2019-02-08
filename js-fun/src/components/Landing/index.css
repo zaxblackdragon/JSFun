@@ -8,9 +8,7 @@
     animation-timing-function: ease-out; /*makes it slowly stop*/
     animation-iteration-count: 1; /* how many times it the animation runs */
   }
-  
   .App-header {
-    background-color: whitesmoke;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
