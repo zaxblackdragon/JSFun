@@ -47,9 +47,12 @@ constructor(props) {
            A playground for Javascript challenges.
           </p>
           <div>
+          <Link to="/palindrome"><button className="link-palindrome">Palindrome</button></Link>
+          </div>
+          <div>
             <button onClick={this.handleTextColorChange}>Text Color Change</button>
             <button onClick={this.handleTextReset}>Text Reset</button>
-            <Link to="/palindrome"><button>Palindrome</button></Link>
+            
           </div>
           <a
             className="App-link"

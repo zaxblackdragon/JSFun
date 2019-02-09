@@ -26,6 +26,19 @@
     color: #669999;
     animation: fadeIn 3s; /* This sets the duration length of the entire fade sequence */
   }
+  .link-palindrome {
+    background: pink;
+    color: grey;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: -2px 2px 2px 2px lightgray;
+    border: 1px solid grey;
+    border-radius: 3px;
+  }
+  .link-palindrome:hover {
+    background: red;
+    color: white;
+  }
   /* this is needed to make the animation work*/
   @keyframes App-logo-spin {
     from {
