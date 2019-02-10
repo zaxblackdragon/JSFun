@@ -1,0 +1,25 @@
+.nav-page {
+    position: absolute;
+    background: black;
+    /* opacity: 0.8; */
+    width: 100vw;
+    height: 100vh;
+}
+.link-nav-Home {
+    position: relative;
+    color: orange;
+    margin-top: 20vh;
+}
+.link-nav-Home:hover {
+    position: relative;
+    color: red;
+    margin-top: 20vh;
+}
+.link-nav-Pal {
+    position: relative;
+    color: orange;
+}
+.link-nav-Pal:hover {
+    position: relative;
+    color: red;
+}

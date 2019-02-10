@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import Nav from "./components/Nav/index";
 import Landing from './components/Landing';
 import Palindrome from './components/Palindrome/index';
 
@@ -15,6 +16,7 @@ class App extends Component {
       textColor: "#669999",
     };
  }
+
  handleBackgroundColorChange = (e) => {
     e.preventDefault();
     const bgColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet",];
@@ -38,14 +40,18 @@ class App extends Component {
       arrTargetPosition: 0,
     })
   }
+
   render() {
     return (
+      
       <div className="App" style={{ background: this.state.bgColors }}>
+      <Nav />
       <button onClick={this.handleBackgroundColorChange}>Background Color</button>
       <button onClick={this.handleBackgroundColorReset}>Background Reset</button>
+      
       <Router>
         <Switch>
-          <Route exact path="/" component={ Landing  } />
+          <Route exact path="/" component={ Landing } />
           <Route path="/palindrome" component={ Palindrome } />
         </Switch>
       </Router>
