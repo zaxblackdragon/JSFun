@@ -8,7 +8,9 @@ constructor(props) {
   this.state = {
     value: "",
     mess: "",
-    placeholder: "",
+    placeholder: "Try a something...",
+    targetIndexPositionNo: 0,
+    targetIndexPositionYes: 0,
   }
   this.handleChange = this.handleChange.bind(this);
   this.handleSubmit = this.handleSubmit.bind(this);
@@ -24,7 +26,11 @@ handleChange = (e) => {
 // Figures out if the user input is a palindrom or on when the "Submit" button is pressed.   
 handleSubmit = (e) => {
   e.preventDefault();
-const placeholder = this.state.value;
+const placeholderMessNo = ["Try something else...", "Keep going...", "You can do this...", "You got this!"];
+const placeholderMessYes = ["That's awsome!", "Keep it up", "You're fantastic!", "You're a maniac..."];
+
+const placeholderYes = placeholderMessYes[this.state.targetIndexPositionYes];
+const placeholderNo = placeholderMessNo[this.state.targetIndexPositionNo];
 // Captures the User Input and filters out the blank spaces
 const userInput = this.state.value.split('').filter((v) => { return v !== " " });
 // Iterates through the above array and compares the first letter to the last letter, then is moves in incrementally by -1
@@ -34,7 +40,8 @@ const userInput = this.state.value.split('').filter((v) => { return v !== " " })
           this.setState({ 
             mess: "This in not a Palindrome, bummer in the summer!",
             value: "",
-            placeholder: placeholder,
+            placeholder: placeholderNo,
+            targetIndexPositionNo: this.state.targetIndexPositionNo + 1,
            });
           return;
           } 
@@ -43,7 +50,8 @@ const userInput = this.state.value.split('').filter((v) => { return v !== " " })
         this.setState({ 
           mess: "This is a Palindrome bro, Yeehaw!", 
           value: "",
-          placeholder: placeholder,
+          placeholder: placeholderYes,
+          targetIndexPositionYes: this.state.targetIndexPositionYes + 1,
         });
         return;
   }
@@ -69,6 +77,11 @@ const userInput = this.state.value.split('').filter((v) => { return v !== " " })
             <input type="submit" value="Submit" />
           </form>
           <h2 style={{ color: "magenta" }}>{this.state.mess}</h2>
+          <div>
+            <p>Score:</p>
+            <p><strong>Wins:</strong>{this.state.targetIndexPositionYes}</p>
+            <p><strong>Losses:</strong>{this.state.targetIndexPositionNo}</p>
+          </div>
       </div>
       )
     }
