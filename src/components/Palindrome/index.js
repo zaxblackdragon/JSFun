@@ -32,7 +32,7 @@ const placeholderMessYes = ["That's awsome!", "Keep it up", "You're fantastic!",
 const placeholderYes = placeholderMessYes[this.state.targetIndexPositionYes];
 const placeholderNo = placeholderMessNo[this.state.targetIndexPositionNo];
 // Captures the User Input and filters out the blank spaces
-const userInput = this.state.value.split('').filter((v) => { return v !== " " });
+const userInput = this.state.value.toLowerCase().split('').filter((v) => { return v !== " " });
 // Iterates through the above array and compares the first letter to the last letter, then is moves in incrementally by -1
     for (let i = 0; i < userInput.length; i++) {
       if (userInput[i] !== userInput[userInput.length - 1 - i]) {
