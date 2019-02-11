@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Link } from 'react-router-dom';
-
 import './index.css';
 
 export class Nav extends Component {
@@ -11,7 +9,6 @@ export class Nav extends Component {
             display: "none",
             backgroundColor: "transparent",
         }
-
     }
     handleNavButton = (e) => {
         e.preventDefault();
@@ -28,10 +25,9 @@ export class Nav extends Component {
           display: "block",
           backgroundColor: "rgba(000, 000, 000, .85)",
         });
-        console.log(this.state.isClicked);
-       }
+      }
 
-       componentDidMount () {
+      componentDidMount () {
         // Detects clicks everywhere on the screen
         document.body.addEventListener('click', this.resetNav)
       }
@@ -43,15 +39,18 @@ export class Nav extends Component {
           backgroundColor: "transparent",
          })
       }
+      handleHome = (e) => {
+        console.log("triggered")
+      }
   render() {
     return (
       <div style={{ background: this.state.backgroundColor }}>
-        <button style={{ background: "red", color: "white" }} onClick={this.handleNavButton}>Nav</button>
+        <button className="btn-nav" onClick={this.handleNavButton}>N</button>
         <div className="nav-page" style={{ backgroundColor: this.state.backgroundColor, display: this.state.display }}>
            
           <div>
-            <Link to="/"><h1 className="link-nav-Home">Home</h1></Link>
-            <Link to="/palindrome"><h1 className="link-nav-Pal">Palindrome</h1></Link>
+            <h1 className="link-nav-Home"><a href="/">Home</a></h1>
+            <h1 className="link-nav-Pal"><a href="/palindrome">Palindrome Game</a></h1>
           </div>
         </div>
       </div>

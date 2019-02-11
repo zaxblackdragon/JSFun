@@ -1,25 +1,53 @@
 .nav-page {
     position: absolute;
     background: black;
-    /* opacity: 0.8; */
     width: 100vw;
     height: 100vh;
 }
-.link-nav-Home {
+.btn-nav {
+    background: pink;
+    color: grey;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border: 1px solid grey;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 10px;
+    right:20px;
+}
+.btn-nav:hover {
+    background: orange;
+    transition: all .15s linear;
+    color: grey;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border: 1px solid grey;
+    border-radius: 27px;
+    height: 55px;
+    width: 55px;
+    position: fixed;
+    top: 8px;
+    right: 15px;
+}
+.link-nav-Home a {
     position: relative;
     color: orange;
-    margin-top: 20vh;
+    margin-top: 50vh;
 }
-.link-nav-Home:hover {
+.link-nav-Home a:hover {
     position: relative;
     color: red;
-    margin-top: 20vh;
+    margin-top: 50vh;
 }
-.link-nav-Pal {
+.link-nav-Pal a {
     position: relative;
     color: orange;
 }
-.link-nav-Pal:hover {
+.link-nav-Pal a:hover {
     position: relative;
     color: red;
 }
