@@ -23,9 +23,9 @@
     transition: all .15s linear;
     color: grey;
     font-weight: bold;
-    font-size: 30px;
-    box-shadow: 2px 2px 2px 2px lightgray;
-    border: 1px solid grey;
+    font-size: 35px;
+    box-shadow: 3px 3px 3px 3px lightgray;
+    border: 1.5px solid grey;
     border-radius: 27px;
     height: 55px;
     width: 55px;
