@@ -8,30 +8,30 @@
     background: pink;
     color: grey;
     font-weight: bold;
-    font-size: 30px;
-    box-shadow: 2px 2px 2px 2px lightgray;
-    border: 1px solid grey;
-    border-radius: 25px;
-    height: 50px;
-    width: 50px;
+    font-size: 1.875em;
+    box-shadow: 0.0625em 0.0625em 0.0625em 0.0625em lightgray;
+    border: 0.03125em solid grey;
+    border-radius: 0.78125em;
+    height: 1.5625em;
+    width: 1.5625em;
     position: fixed;
-    top: 10px;
-    right:20px;
+    top: 0.3125em;
+    right:0.625em;
 }
 .btn-nav:hover {
     background: orange;
     transition: all .15s linear;
     color: grey;
     font-weight: bold;
-    font-size: 35px;
-    box-shadow: 3px 3px 3px 3px lightgray;
-    border: 1.5px solid grey;
-    border-radius: 27px;
-    height: 55px;
-    width: 55px;
+    font-size: 2.1875em;
+    box-shadow: 0.09375em 0.09375em 0.09375em 0.09375em lightgray;
+    border: 0.046875em solid grey;
+    border-radius: 1.000em;
+    height: 1.71875em;
+    width: 1.71875em;
     position: fixed;
-    top: 8px;
-    right: 15px;
+    top: 0.25em;
+    right: 0.375em;
 }
 .link-nav-Home a {
     position: relative;
