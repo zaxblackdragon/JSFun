@@ -5,6 +5,7 @@
     height: 100vh;
 }
 .btn-nav {
+    text-align: center;
     background: pink;
     color: grey;
     font-weight: bold;
@@ -19,6 +20,7 @@
     right:0.625em;
 }
 .btn-nav:hover {
+    text-align: center;
     background: orange;
     transition: all .15s linear;
     color: grey;
