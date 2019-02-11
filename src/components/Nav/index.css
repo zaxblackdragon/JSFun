@@ -53,19 +53,11 @@
     position: relative;
     color: red;
 }
-@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0)
-{ @media {
-    .btn-nav {
-        color: grey;
-        font-weight: bold;
-        font-size: 1.88em;
-        box-shadow: 0.0625em 0.0625em 0.0625em 0.0625em lightgray;
-        border: 0.03125em solid grey;
-        border-radius: 1.5em;
-        height: 2.6em;
-        width: 2.6em;
-        position: fixed;
-        top: 0.8125em;
-        right: 0.625em;
-    }
-}}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+ .btn-nav {
+    font-size: 2em;
+ }
+}
